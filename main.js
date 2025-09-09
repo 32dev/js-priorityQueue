@@ -3,17 +3,17 @@ class PriorityQueue {
         this.items = [];
     }
     enqueue(value, priority) {
-        this.item.push({ value, priority });
-        this.item.sort((a, b) => a.priority - b.priority);
+        this.items.push({ value, priority });
+        this.items.sort((a, b) => a.priority - b.priority);
     }
     dequeue() {
-        return this.item.shift();
+        return this.items.shift();
     }
     front() {
         return this.items[0];
     }
     isEmpty() {
-        return this.item.length === 0;
+        return this.items.length === 0;
     }
 }
 
